@@ -10,6 +10,7 @@ const Main = {
     this.$checkButtons = document.querySelectorAll('.check')
     this.$inputTask = document.querySelector('#inputTask')
     this.$list = document.querySelector('#list')
+    this.$removeButtons = document.querySelectorAll('.remove')
   },
 
   bindEvents: function() {
@@ -20,6 +21,10 @@ const Main = {
     })
 
     this.$inputTask.onkeypress = self.Events.$inputTask_keypress.bind(this)
+
+    this.$removeButtons.forEach(function(button) {
+      button.onclick = self.Events.removeButton_click
+    })
   },
 
   Events: {
@@ -53,10 +58,21 @@ const Main = {
           </li>
         `
         e.target.value = ''
+
         this.cacheSelectors()
         this.bindEvents()
         
       }
+    },
+
+    removeButton_click: function(e) {
+      let li = e.target.parentElement
+      
+      li.classList.add('removed')
+
+      setTimeout(function(){
+        li.classList.add('hidden')
+      },300)
     }
 
   }
