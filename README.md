@@ -36,13 +36,10 @@
 
 <br clear="both">
 
-<img src="https://raw.githubusercontent.com/RafaelSobral/RafaelSobral/blob/output/snake.svg" alt="Snake animation" />
-
-###
-
-<br clear="both">
-
-<p align="left">Hello World!!</p>
+<p align="left">Hello World!!
+ <br>
+Visualização da tela do sistema de Tarefas - ToDo-List
+</p>
 
 ###
 
@@ -56,10 +53,3 @@
   <img height="200" src="https://imagizer.imageshack.com/v2/1024x768q90/923/28Q3Cx.png"  />
 </div>
 
-###
-
-<br clear="both">
-
-<img align="left" height="120" src="https://64.media.tumblr.com/764a635fe3eac86e9b20b8f7305cf780/tumblr_n1lwvmf3pc1s2t3cto1_500.gifv"  />
-
-###
